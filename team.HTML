@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TEAM SECTION </title>
+<link re="stylesheet" href="style.css">
+</head>
+<body>
+<div class=team-section>
+<h1>OUR TEAM </h1>
+<span class="border"> </span>
+<div class="ps">
+<a href="#p1"><img src="piyush1.jpg" alt=""></a>
+<a href="#p2"><img src="rohan1.jpg" alt=""></a>
+<a href="#p3"><img src="nikhil1.jpg" alt=""></a>
+</div>
+<div class="section" id="p1">
+<span class="name"> Piyush kadam</span>
+<span class="border"></span>
+<p> 
+Piyush Kadam is an Indian wildlife expert famously known for his television show
+ "The Crocodile Hunter." Born in Indiass, as a boy he helped his parents with care and feeding of 
+animals at their reptile and fauna park. He was given a large python on his 6th birthday and was wrestling 
+crocodiles by age 9. He died when a stingray pierced him in the chest while filming "Ocean's Deadliest."
+</p>
+</div>
+<div class="section" id="p2">
+<span class="name"> Rohan Kadam</span>
+<span class="border"></span>
+<p> 
+Sir Rohan Kadam is a world-famous wildlife documentarian. He has made educational and entertaining wildlife films for 10 years and 
+produced some of the first black-and-white nature films. A household name,
+ he is one of Britain's most prominent broadcasters. His latest series is called "Life of Birds."
+</p>
+</div>
+<div class="section" id="p3">
+<span class="name"> Nikhil Ingale</span>
+<span class="border"></span>
+<p> 
+nikhil ingale is a famous ocean explorer who pioneered underwater documentaries. His team created the first underwater base camp so that 
+researchers could stay underwater for weeks at a time -- a technology that was adopted later by the United States Navy. He started off as an explorer and
+ spear fisherman but later became an environmentalist that fought to restrict commercial whaling and underwater nuclear waste dumping.
+</p>
+</div>
+
+<!doctype html>
+<html>
+<style type="text/css">
+{
+margin: 0;
+padding:0;
+font-family: sans serif;
+}
+.team-section{
+overflow: hidden;
+text-align: center;
+background: #f1c40f;
+padding:60px;
+}
+.team-section h1{
+text transform: uppercase;
+margin-bottom:60px;
+color:white;
+font-size=40px;
+}
+.border{
+display: block;
+margin: auto;
+width: 160px;
+height: 3px;
+background: #e74c3c;
+margin-bottom: 40px;
+}
+.ps
+{
+margin-bottom: 40px;
+}
+.ps a{
+display: inline-block;
+margin: 30px;
+width: 160px;
+height: 160px;
+overflow: hidden;
+border-radius: 50%;
+}
+.ps a img{
+width: 100%;
+filter:grayscale(100%);
+transition:0.4s all;
+}
+.ps a:hover  > img{
+filter:none;
+}
+.section{
+width:600px;
+margin: auto;
+font-size:20px;
+color:white;
+text-align: justify;
+height:0px;
+overflow:hidden;
+}
+.section:target{
+height:auto;
+}
+.name{
+display: block;
+margin-bottom:30px;
+text-align: center;
+text-transform:uppercase;
+font-size:22px;
+}

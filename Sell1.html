@@ -1,0 +1,118 @@
+<html>
+<head>
+	<title>Sell</title>
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <img src="logo5.jpg" alt="Logo" style="width:180px;height:50px;">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+      <li>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:transparent; color:black;">
+          Services
+        </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="Buy2.php">Buy</a>
+            <a class="dropdown-item" href="Sell1.html">Sell</a>
+            <a class="dropdown-item" href="Petcare.html">Petcare Centre</a>
+          </div>
+      </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AboutUs.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div style="border: 20px">
+  <form style="margin-left: 15%;margin-right: 15%; margin-top: 5%; background-color: white; padding: 20;" action="seller.php" method="POST">
+    <h1>Registration Form</h1>
+  <div class="form-group">
+    <label for="inputAddress">Name</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Full-Name" name="SName" required>
+  </div>
+  <div class="form-group">
+    <label for="inputContactno">Contact Number</label>
+    <input type="text" class="form-control" id="inputContactno" placeholder="Mobile number" name="Contactno" required>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+        <label for="inputCategory">Pet-Category</label>
+        <select id="inputCategory" class="form-control" name="Petcategory">
+          <option>Dog</option>
+          <option>Cat</option>
+          <option>Fish</option>
+          <option>Bird</option>
+          <option>Tortoise</option>
+          <option>Hamster</option>
+        </select>
+    </div>
+    <div class="form-group col-md-6">
+        <label for="inputBreed">Type</label>
+        <input type="text" class="form-control" id="inputType" placeholder="Type" name="Breed" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+        <label for="inputPetname">Pet's Name</label>
+        <input type="name" class="form-control" id="inputName" placeholder="Name of Pet" name="Petname" required>
+    </div>
+    <div class="form-group col-md-6">
+        <label for="inputAge">Pet's Age</label>
+        <input type="age" class="form-control" id="inputAge" placeholder="Age of Pet" name="Petage" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPrice">Price</label>
+    <input type="number" class="form-control" id="inputPrice" placeholder="Selling price" name="Price" required>
+  </div>
+  <div class="form-group">
+    <label for="inputDescription">Description about Pet</label>
+    <input type="text" class="form-control" id="inputDescription" placeholder="Pet's color,Habits..." name="Description" required>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="Address" required>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="Address1" required>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity" name="Address2">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control" name="Address3">
+        <option>Maharashtra</option>
+        <option>Goa</option>
+        <option>Kerala</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip" name="Address4" required>
+    </div>
+  </div>
+  <a href=""><button type="submit" class="btn btn-primary">Register</button></a>
+</form>
+</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

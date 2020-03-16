@@ -1,0 +1,243 @@
+<!Doctype html>
+<head>
+<title>About Us</title>
+<!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+	.section title{} .section_subtitle{
+		margin-bottom: 7px;
+		padding-left: 7px;
+		font-size: 16px;
+		line-height:1;
+		text-transform:uppercase;
+		color:#aaaaaa;
+		border-left:3px solid #bfa67a;
+		font-size:700;
+		font-family:tahoma;
+	}
+	.section_main_title{
+		margin-top:0;
+		margin-bottom:37px;
+		font-size:30px;
+		line-height:1.27;
+		font-weight:300;
+	}
+	.section_main_title strong{
+		font-weight:600;
+	}
+	.about-box{
+		-webkit-box-shadow:0 0 0 10px #000000 inset;
+		box-shadow:0 0 0 10px #000000 inset;
+		margin-right:0;
+		margin-top:0;
+		position:relative;
+		display:block;
+	}
+	.box-overlay{
+		position:absolute;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		background-color:#000;
+		opacity:0.5;
+		z-index: 3;
+		transform:translateY(30px) translateX(-30px);
+		-webkit-transform:translateY(30px) translateX(-30px);
+	}
+	.about-box .videopopup img{
+		transform:translateY(30px) translateX(-30px);
+		-webkit-transform:translateY(30px) translateX(-30px);
+		width:100%;
+		z-index:1;
+	}
+	.about-box .videopopup{
+		position:relative;
+	}
+	.sonar-wrapper{
+		position:absolute;
+		z-index: 9;
+		top:50%;
+		left:50%;
+		margin-left: -40px;
+		margin-top:20px; 
+	}
+	.sonar-emitter{
+		position:relative;
+		margin:0px auto;
+		width:30px;
+		height:30px;
+		border-radius:50%;
+		background-color:#bfa67a;
+		text-align:center;
+	}
+	.sonar-emitter i{
+		z-index:10;
+		font-size:20px;
+		color:white;
+		margin-left:4px;
+		line-height:32px;
+	}
+	.sonar-wave{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		border-radius:9999px;
+		background-color:#bfa67a;
+		opacity:0;
+		z-index:-1;
+		pointer-events:none;
+	}
+	.sonar-wave{
+		animation:sonarWave 2s linear infinite;
+	}
+	@keyframes sonarWave{
+		from{
+			opacity:0.4;
+		}
+		to{
+			transform:scale(3);
+			opacity:0;
+		}
+
+	}
+	.btn-color-background{
+		-moz-user-select:none;
+		background-image:-webkit-linear-gradient(145deg,#faa61f 0%,#faa61f 0%,#ed1847 100%);
+		border:1px solid #bfa67a;
+		border-radius:2px;
+		color:#ffffff;
+		cursor:pointer;
+		display:inline-block;
+		font-size:14px;
+		line-height:1.42857;
+		margin-bottom:0;
+		padding:12px 48px;
+		text-align:center;
+		text-transform:uppercase;
+		transition:all 0.5s ease 0s;
+		vertical-align: middle;
+		
+	}
+	.btn-color-background:hover{
+		text-decoration: none;
+		color:#272627;
+		background: transparent;
+	}
+	ul.navbar-nav>li>a {
+		color: #000;
+	}
+
+</style>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/stylefornav.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+			<nav class="navbar navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="site-nav-wrapper">
+	  
+						<div class="navbar-header">
+	  
+							<!-- Mobile Menu Open Button -->
+							<span id="mobile-nav-open-btn">&#9776;</span>
+	  
+							<!-- Logo -->
+							<a class="navbar-brand top" href="index.html" style="margin-top: -10px; padding-top: 1px;">
+				  			<img class="forextrasmall" src="logo5.jpg" alt="Logo" style="width:180px;height:50px;">
+							</a>
+						</div>
+						<!-- class="smooth-scroll" -->
+						<!-- Main Menu -->
+						<div class="container">
+							<div class="collapse navbar-collapse">
+								<ul class="nav navbar-nav pull-right">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="Buy2.html">Buy</a></li>
+									<li><a href="Sell1.html">Sell</a></li>
+									<li><a href="Petcare.html">Hostile</a></li>
+									<li><a href="AboutUs.html">About</a></li>
+									<li><a href="#team">Team</a></li>
+								</ul>
+							</div>
+						</div>
+	  
+						<!-- Mobile Menu -->
+						<div id="mobile-nav">
+							<span id="mobile-nav-close-btn">&times;</span>
+	  
+							<div id="mobile-nav-content">
+								<ul class="nav">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="Buy2.html">Buy</a></li>
+									<li><a href="Sell1.html">Sell</a></li>
+									<li><a href="Petcare.html">Hostile</a></li>
+									<li><a href="AboutUs.html">About</a></li>
+									<li><a href="#team">Team</a></li>
+								</ul>
+							</div>
+						</div>
+	  
+					</div>
+				</div>
+			</nav>
+		</header>
+	  <!-- Header Ends -->
+
+</br>
+</br>
+</br>
+<section id="about" class="section-padding about-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="section_title"></br>
+					<div class="section_subtitle">About us</div>
+					<h2 class="section_main_title">WE ARE <strong>CREATIVE</strong></h2>
+				</div>
+				<div class="about_item">
+					<p>
+						Our Online Pet Shop came with a vision to make pet finding hassle free.
+						Getting a pet is like getting a child they need our care concern and also all the basic needs.
+						We understand your love towards your pet and also the troubles you face while looking for a pet,
+						which made us set up our vision.
+					</p>
+					<p>
+						From new just born puppy to grown matured dog, from doberman to husky, from dogs to hamsters, fishes, cats, tortoise and what not?
+						All the woofing pets will be available for you at one platform.
+						Also you can easily sell your pets just by registering and buyer will call you on his own.
+						Clubbed with Petcare centre we also  provide care centre for your pets. We just stop at nothing.
+						It doesn't matter which pet you have all that matters is you have a pet and we are there to take care of it in your absence.
+					</p>	
+				</div>
+				<div class="hgt-20"></div>
+				<div class="home-button"><br>
+					<a href="index.html" class="btn-color-background">Home</a>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="about-box">
+					<img src="about.jpg" alt="" height="400">
+				</div>
+			</div>
+		</div>		
+	</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- JQuery -->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="js/scriptfornav.js"></script>
+</section>
+
+</body>
+</html>
